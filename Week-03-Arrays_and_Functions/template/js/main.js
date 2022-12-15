@@ -64,7 +64,7 @@ console.log(arrNames[arrNames.length-1])
 
 console.log(arrNames[0])
 
-// Create a new array called nameLengths. Write a loop to iterate over the previously created names array and add the length of each name to the nameLengths array.
+// 5. Create a new array called nameLengths. Write a loop to iterate over the previously created names array and add the length of each name to the nameLengths array.
 // For example:
 
 // namesArray = ["Kelly", "Sam", "Kate"] //given this array
@@ -72,3 +72,8 @@ console.log(arrNames[0])
 
 let nameLengths = arrNames.map(x => x.length)
 console.log(nameLengths)
+
+// 6. Write a loop to iterate over the nameLengths array and calculate the sum of all the elements in the array. 
+
+let sumNameLengths = nameLengths.reduce( (a,b) => a + b,0)
+console.log(sumNameLengths)

@@ -77,3 +77,16 @@ console.log(nameLengths)
 
 let sumNameLengths = nameLengths.reduce( (a,b) => a + b,0)
 console.log(sumNameLengths)
+
+// 7. Write a function that takes two parameters, word and n, as arguments and returns the word concatenated to itself n number of times. (i.e. if I pass in ‘Hello’ and 3, I would expect the function to return ‘HelloHelloHello’).
+
+function wordsConcat (str, x){
+    let newStr = ''
+    for(i = 0; i <= x; i++){
+        newStr += str
+    }
+    console.log(newStr)
+}
+
+wordsConcat('Hello', 5)
+

@@ -2,7 +2,7 @@
 // https://github.com/jonahollis/promineo-tech/blob/main/Week-03-Arrays_and_Functions/template/js/main.js
 
 // URL to Your Coding Assignment Video:
-
+// https://www.youtube.com/watch?v=2IhtqMZ_NzU&ab_channel=JonahHollis
 
 // Instructions:
 // In Visual Studio Code, write the code that accomplishes the objectives listed below and ensures that the code compiles and runs as directed. 

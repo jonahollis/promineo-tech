@@ -64,3 +64,10 @@ console.log(arrNames[arrNames.length-1])
 
 console.log(arrNames[0])
 
+// Create a new array called nameLengths. Write a loop to iterate over the previously created names array and add the length of each name to the nameLengths array.
+// For example:
+
+
+namesArray = ["Kelly", "Sam", "Kate"] //given this array
+nameLengths = [5, 3, 4] //create this new array
+

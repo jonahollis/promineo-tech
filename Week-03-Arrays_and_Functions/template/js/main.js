@@ -1,9 +1,9 @@
-/* 1. 
-Create an array called ages that contains the following values: 3, 9, 23, 64, 2, 8, 28, 93.
-Programmatically subtract the value of the first element in the array from the value in the last element of the array 
-Do not use numbers to reference the last element, find it programmatically, 
-ages[7] – ages[0] is not allowed!
-*/
+// 1. 
+// Create an array called ages that contains the following values: 3, 9, 23, 64, 2, 8, 28, 93.
+// Programmatically subtract the value of the first element in the array from the value in the last element of the array 
+// Do not use numbers to reference the last element, find it programmatically, 
+// ages[7] – ages[0] is not allowed!
+
 
 // 1a
 let arrAges = [3, 9, 23, 64, 2, 8, 28, 93]
@@ -27,8 +27,8 @@ function average (arr){
 
 // --------------------------------------------------
 
-/* 2. 
-Create an array called names that contains the following values: ‘Sam’, ‘Tommy’, ‘Tim’, ‘Sally’, ‘Buck’, ‘Bob’. */
+//  2. 
+//  Create an array called names that contains the following values: ‘Sam’, ‘Tommy’, ‘Tim’, ‘Sally’, ‘Buck’, ‘Bob’. 
 let arrNames = ['Sam','Tommy','Tim','Sally','Buck','Bob']
 
 // 2a - Use a loop to iterate through the array and calculate the average number of letters per name. 
@@ -41,7 +41,7 @@ arrNames.forEach( x => {
 console.log(sumNames)
 console.log(sumNames / arrNames.length)
 
-// 2b - Use a loop to iterate through the array again and concatenate all the names together, separated by spaces. arrToString(arrNames)  */
+//  2b - Use a loop to iterate through the array again and concatenate all the names together, separated by spaces. arrToString(arrNames)  
 
 function arrToString(arr){
     let strNames = ''
@@ -54,21 +54,13 @@ function arrToString(arr){
 
 arrToString(arrNames)
 
-/* 3.
-How do you access the last element of any array? */
+// 3.
+// How do you access the last element of any array?
 
-let grads = ['Sarah','Brock','Greg','Gerty']
+console.log(arrNames[arrNames.length-1])
 
-function gradList(graduates){
-    //write your code here
-    graduates.push('Mary','Steven','Eddie')
-    graduates.sort().reverse()
-    return graduates
-    
-}
+// 4.
+// How do you access the first element of any array?
 
-console.log(gradList(grads));
-
-
-
+console.log(arrNames[0])
 

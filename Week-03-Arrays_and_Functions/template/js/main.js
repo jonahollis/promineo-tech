@@ -1,3 +1,26 @@
+// URL to GitHub Repository:
+// https://github.com/jonahollis/promineo-tech/blob/main/Week-03-Arrays_and_Functions/template/js/main.js
+
+// URL to Your Coding Assignment Video:
+
+
+// Instructions:
+// In Visual Studio Code, write the code that accomplishes the objectives listed below and ensures that the code compiles and runs as directed. 
+// Create a new repository on GitHub for this week’s assignments and push this document, with your project code, to the repository.
+// Include the URLs for this week’s repository and video where instructed.
+// Submit this document as a .PDF file in the LMS.
+
+
+// Coding Steps:
+// All questions must be printed to your Browser’s console:
+// Create an array called ages that contains the following values: 3, 9, 23, 64, 2, 8, 28, 93.
+// Programmatically subtract the value of the first element in the array from the value in the last element of the array 
+// Do not use numbers to reference the last element, find it programmatically, 
+// ages[7] – ages[0] is not allowed!
+
+
+
+
 // 1. 
 // Create an array called ages that contains the following values: 3, 9, 23, 64, 2, 8, 28, 93.
 // Programmatically subtract the value of the first element in the array from the value in the last element of the array 
@@ -163,15 +186,14 @@ function willBuyDrink(isHotOutside,moneyInPocket){
 
 willBuyDrink(isHotOutside,moneyInPocket)
 
-
 // 13. Create a function of your own that solves a problem. 
 // In comments, write what the function does and why you created it.
 
-function fahrenheitToCelsius(fahrenheit) {
-    // 32 is subtracted from the fahrenheit input, then divided by 1.8; this is the formula to convert fahrenheit to celsius. the result is then returned
-    return (fahrenheit - 32) / 1.8;
+function fahrenheitToCelsius(fahrenheit){
+    // 32 is subtracted from the fahrenheit argument input during function call
+
+    return (fahrenheit - 32) * (5/9)
+    // console.log((fahrenheit - 32) * (5/9))
 }
 
-// initialize celsius as a variable, set it equal to the fahrenheitToCelsius function with a fahrenheit input of 100
-
-let celsius = fahrenheitToCelsius(100)
+fahrenheitToCelsius(100)

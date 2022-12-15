@@ -101,7 +101,16 @@ fullName('john','smith')
 
 // 9. Write a function that takes an array of numbers and returns true if the sum of all the numbers in the array is greater than 100.
 
+function greaterThan100 (arr){
+    let sum = arr.reduce( (acc,currV) => acc + currV, 0)
+    if(sum > 100){
+        console.log(true)
+    }else{
+        console.log(false)
+    }
+}
 
+greaterThan100([10])
 
 // 10. Write a function that takes an array of numbers and returns the average of all the elements in the array.
 

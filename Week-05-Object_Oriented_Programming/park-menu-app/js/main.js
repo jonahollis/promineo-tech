@@ -5,7 +5,7 @@ class Trail {
   }
 
   describe(){
-    return `${this.name} plays ${this.difficultyRating}.`
+    return `${this.name} has a difficulty rating of ${this.difficultyRating}.`
   }
 }
 

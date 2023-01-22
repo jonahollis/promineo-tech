@@ -105,22 +105,22 @@ class Menu{
       let selection = this.showParkMenuOptions(description)
       switch (selection){
         case '1':
-          this.createPlayer()
+          this.createTrail()
           break
         case '2':
-          this.deletePlayer()
+          this.deleteTrail()
           break
       }
     }
   }
 
-  createPlayer(){
+  createTrail(){
     let name = prompt('Enter name for new trail:')
     let difficultyRating = prompt('Enter the difficulty rating for new trail:')
     this.selectedPark.trails.push(new Trail(name, difficultyRating))
   }
 
-  deletePlayer(){
+  deleteTrail(){
     let index = prompt('Enter the index of the trail you wish to delete:')
     if(index > -1 && index < this.selectedPark.trails.length){
       this.selectedPark.trails.splice(index, 1)

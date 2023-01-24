@@ -1,5 +1,4 @@
-document.addEventListener('DOMContentLoaded', function()){
-
+document.addEventListener('DOMContentLoaded', function(){
   class Trail {
     constructor(name, difficultyRating){
       this.name = name
@@ -132,6 +131,5 @@ document.addEventListener('DOMContentLoaded', function()){
   
   let menu = new Menu()
   menu.start()
-
-}
+})
 

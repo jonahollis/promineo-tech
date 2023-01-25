@@ -1,2 +1,0 @@
-main-copy.js
-**/node_modules

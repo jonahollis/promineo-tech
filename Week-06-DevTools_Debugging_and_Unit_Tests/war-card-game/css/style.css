@@ -14,8 +14,8 @@
 
 body {
   background: rgb(10, 58, 50);  /* fallback for old browsers */
-  background: linear-gradient(rgb(0, 0, 0), rgba(7, 99, 7, 0.9)), url("../img/bg.jpg");  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(rgb(0, 0, 0), rgba(88, 5, 5, 0.9)), url("../img/bg.jpg"); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(rgb(0, 0, 0), rgba(7, 99, 7, 0.7)), url("../img/bg.jpg");  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(rgb(0, 0, 0), rgba(88, 5, 5, 0.7)), url("../img/bg.jpg"); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;

@@ -24,14 +24,14 @@ class WarCardGame{
       this.playerOneScore.push(playerOneTurn)
       this.playerTwoScore.push(playerTwoTurn)
       this.playerOneGameScore.push(1)
-      console.log(`${this.playerOne} wins this round! Card values of ${playerOneTurn} to ${playerTwoTurn}. ${this.playerOne} is awarded 1 pt!`)
+      console.log(`${this.playerOne} wins this round! Card values of [${playerOneTurn}] to [${playerTwoTurn}]. ${this.playerOne} is awarded 1 pt!`)
     }else if(playerOneTurn < playerTwoTurn){
       this.playerOneScore.push(playerOneTurn)
       this.playerTwoScore.push(playerTwoTurn)
       this.playerTwoGameScore.push(1)
-      console.log(`${this.playerTwo} wins this round! Card values of ${playerTwoTurn} to ${playerOneTurn}. ${this.playerTwo} is awarded 1 pt!`)
+      console.log(`${this.playerTwo} wins this round! Card values of [${playerTwoTurn}] to [${playerOneTurn}]. ${this.playerTwo} is awarded 1 pt!`)
     }else{
-      console.log(`${this.playerOne} and ${this.playerTwo} tie this round! ${playerTwoTurn} to ${playerOneTurn}. Neither player is awarded a point!`)
+      console.log(`${this.playerOne} and ${this.playerTwo} tie this round! [${playerTwoTurn}] to [${playerOneTurn}]. Neither player is awarded a point!`)
     }
 
   }
@@ -42,10 +42,10 @@ class WarCardGame{
     let playerTwoTotal = this.playerTwoScore.reduce((a,b) => a + b, 0)
 
     if(playerOneTotal > playerTwoTotal){
-      console.log(`${this.playerOne} wins! Their Total Game Score is: ${this.playerOneGameScore.length} & their Total Card Value score is: ${playerOneTotal} to ${playerTwoTotal}`)
+      console.log(`${this.playerOne} wins! Their Total Game Score is: [${this.playerOneGameScore.length}] & their Total Card Value score is: [${playerOneTotal}] compared to their opponent's score of [${playerTwoTotal}]!`)
       
     }else{
-      console.log(`${this.playerTwo} wins! Their Total Game Score is: ${this.playerTwoGameScore.length} & their Total Card Value score is: ${playerTwoTotal} to ${playerOneTotal}`)
+      console.log(`${this.playerTwo} wins! Their Total Game Score is: [${this.playerTwoGameScore.length}] & their Total Card Value score is: [${playerTwoTotal}] compared to their opponent's score of [${playerOneTotal}]!`)
     }
   }
 

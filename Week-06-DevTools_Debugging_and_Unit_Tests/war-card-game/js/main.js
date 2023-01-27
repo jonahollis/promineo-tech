@@ -7,6 +7,7 @@ class WarCardGame{
     this.playerOneGameScore = []
     this.playerTwoGameScore = []
     this.deckCount = 52
+    this.deck = [1,1,1,1,2,2,2,2,3,3,3,3,4,4,4,4,5,5,5,5,6,6,6,6,7,7,7,7,8,8,8,8,9,9,9,9,10,10,10,10,11,11,11,11,12,12,12,12,13,13,13,13]
 
   }
 
@@ -15,10 +16,24 @@ class WarCardGame{
     return value + 1
   }
 
+  getUniqueCard(playerTurn){
+    let index = this.deck.indexOf(playerTurn)
+    if(index > -1){
+      this.deck.splice(index, 1)
+    }else if(index === -1 && this.deck.length > 0){
+      playerTurn = this.cardValue()
+      // recursive function to retest if card is unique
+      this.getUniqueCard(playerTurn)
+    }
+  }
+
   deal(){
     let playerOneTurn = this.cardValue()
     let playerTwoTurn = this.cardValue()
     this.deckCount -= 2
+
+    this.getUniqueCard(playerOneTurn)
+    this.getUniqueCard(playerTwoTurn)
 
     if(playerOneTurn > playerTwoTurn){
       this.playerOneScore.push(playerOneTurn)
@@ -60,5 +75,6 @@ class WarCardGame{
 
 let newGame = new WarCardGame()
 newGame.start()
+
 
 

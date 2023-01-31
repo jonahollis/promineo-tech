@@ -81,6 +81,3 @@ let cardValue = function(){
   let value = Math.floor(Math.random() * 13)
   return value + 1
 }
-
-
-
